@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/* fv */
+.fv {
+    position: relative;
+    max-height: 750px;
+    overflow: hidden;
+}
+
+/* 画像 */
+.fv_img {
+    max-height: 100%;
+}
+
+.fv_img img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* テキスト */
+.fv_content {
+    position: absolute;
+    top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -60%);
+    color: #f7f5f2;
+    z-index: 2;
+}
+
+.fv_content a {
+	text-decoration: none;
+	color: #f7f5f2;
+}
+/* タイトル */
+.fv_title {
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 20px;
+	color: #222;
+}
+
+.fv_sub {
+  	font-size: clamp(14px, 2vw, 24px);
+	font-weight: 600;
+	margin-bottom: 60px;
+	color: #333;
+}
+
+/*ボタン*/
+.fv_btn {
+	display: inline-block;
+	background-color: #1e3a8a;
+   	font-size: clamp(14px, 1.8vw, 26px);
+    font-weight: bold;
+	letter-spacing: 0.1em;
+    padding: 14px 40px;
+    box-shadow: 0 8px 20px rgba(198,124,78,0.3);
+    transition: 0.3s;
+    border: 2px solid #f7f5f2;
+    border-radius: 20px;
+}
+
+.fv_btn:hover {
+	opacity: 0.8;
+}
+/*fvここまで*/
+
+/* about */
+.about {
+  	padding: 120px 20px;
+}
+
+/* タイトル */
+.section_title {
+  	font-size: 28px;
+  	font-weight: bold;
+  	margin-bottom: 30px;
+  	color: #333;
+}
+
+/* テキスト */
+.about_text {
+  max-width: 800px;
+  margin-bottom: 60px;
+  line-height: 2;
+  color: #555;
+}
+
+.accent {
+  color: #2f4a8a;
+  font-weight: bold;
+}
+
+/* カード */
+.about_cards {
+  display: flex;
+  gap: 30px;
+}
+
+/* 各カード */
+.about_card {
+  	background: #fff;
+  	border-radius: 20px;
+  	padding: 20px;
+  	flex: 1;
+	text-align: center;
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* アイコン */
+.about_card img {
+  	height: 120px;
+  	margin-bottom: 20px;
+}
+
+/* 見出し */
+.about_card h3 {
+  	font-size: 18px;
+  	margin-bottom: 30px;
+  	color: #2f4a8a;
+}
+
+/* テキスト */
+.about_card p {
+  	font-size: 14px;
+  	line-height: 1.8;
+  	color: #555;
+	text-align: left;
+}
+
+/* aboutここまで */
+
+/* skill */
+
+.skill {
+  	padding: 120px 20px;
+}
+
+/* リスト */
+.skill_list {
+  	display: flex;
+  	flex-direction: column;
+  	gap: 40px;
+}
+
+/* カード */
+.skill_card {
+  	background: #fff;
+  	border-radius: 20px;
+  	padding: 40px;
+  	box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+	max-width: 700px;
+}
+
+/* タイトル */
+.skill_title {
+  	font-size: 24px;
+  	color: #2f4a8a;
+  	margin-bottom: 20px;
+}
+
+/* テキスト */
+.skill_text {
+  	font-size: 16px;
+  	line-height: 1.8;
+  	margin-bottom: 20px;
+  	color: #555;
+}
+
+/* リスト */
+.skill_points {
+  	margin-bottom: 20px;
+  	padding-left: 20px;
+}
+
+.skill_points li {
+  	margin-bottom: 8px;
+  	font-size: 14px;
+	color: #555;
+}
+
+/* 資格 */
+.skill_license {
+  	font-size: 14px;
+  	font-weight: bold;
+  	color: #555;
+}
+
+/* skillここまで */
+
+/* works */
+.works {
+  padding: 120px 20px;
+  background-color: #f5f7fa;
+}
+
+/* カテゴリ */
+.works_category {
+  font-size: 20px;
+  margin: 60px 0 20px;
+  color: #333;
+}
+
+/* グリッド */
+.works_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* カード */
+.works_item {
+  text-align: center;
+}
+
+.works_grid a {
+	text-decoration: none;
+}
+
+/* 画像 */
+.works_item img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+/* ホバー */
+.works_item:hover img {
+  transform: translateY(-5px);
+}
+
+/* タイトル */
+.works_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* 種別 */
+.works_type {
+  font-size: 12px;
+  color: #777;
+}
+
+/* worksここまで */
+
+/* contact */
+.contact {
+  	padding: 120px 20px;
+  	text-align: center;
+}
+
+/* タイトル */
+.contact .section_title {
+  	margin-bottom: 40px;
+}
+
+/* テキスト */
+.contact_text {
+  	font-size: 14px;
+  	color: #555;
+  	margin-bottom: 20px;
+}
+
+/* メール */
+.contact_mail {
+  	font-size: 24px;
+  	font-weight: bold;
+  	color: #2f4a8a;
+  	text-decoration: none;
+  	transition: 0.3s;
+}
+
+/* ホバー */
+.contact_mail:hover {
+  	opacity: 0.7;
+}
+
+/* contactここまで */
+
+/* 768px以下レスポンシブ対応 */
+
+@media screen and (max-width: 768px) {
+	
+	/* fv */
+	.fv_title {
+    	line-height: 1.4;
+    	margin-bottom: 15px;
+  	}
+
+  	.fv_sub {
+    	margin-bottom: 30px;
+  	}
+
+  	.fv_btn {
+    	padding: 12px 30px;
+  	}
+	
+	/* about */
+	.about {
+		padding: 80px 20px;
+	}
+	
+  	/* テキスト */
+  	.about_text {
+    	font-size: 14px;
+    	line-height: 1.8;
+  	}
+
+  	/* カード全体 */
+  	.about_cards {
+    	display: flex;
+    	flex-direction: column;
+    	gap: 30px;
+		align-items: center;
+  	}
+
+  	/* 各カード */
+  	.about_card {
+    	padding: 25px 20px;
+		max-width: 300px;
+  	}
+
+  	/* アイコン */
+  	.about_card img {
+    	height: 100px;
+  	}
+
+  	/* タイトル */
+  	.about_card h3 {
+    	font-size: 16px;
+  	}
+
+  	/* 本文 */
+  	.about_card p {
+    	font-size: 12px;
+  	}
+	
+	/* skill */
+	.skill {
+		padding: 80px 20px;
+	}
+	
+	.skill_card {
+    	padding: 25px 20px;
+  	}
+
+  	.skill_title {
+    	font-size: 18px;
+    	margin-bottom: 15px;
+  	}
+
+  	.skill_text {
+    	font-size: 13px;
+    	line-height: 1.8;
+    	margin-bottom: 15px;
+  	}
+
+  	.skill_points li {
+    	font-size: 12px;
+    	margin-bottom: 6px;
+  	}
+
+  	.skill_license {
+    	font-size: 12px;
+    	line-height: 1.6;
+  	
+	}
+	
+	/* works */
+	.works {
+		padding: 80px 20px;
+	}
+	
+	.works_grid {
+  		grid-template-columns: 1fr;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	
+	/* 画像 */
+	.works_item img {
+  		margin-bottom: 10px;
+	}
+
+	.works_item {
+		margin-bottom: 30px;
+	}
+
+	/* タイトル */
+	.works_name {
+  		font-size: 13px;
+	}
+
+	/* 種別 */
+	.works_type {
+  		color: #777;
+	}
+	
+	/* contact */
+	.contact {
+		padding: 80px 20px;
+	}
+	
+	/* タイトル */
+	.contact .section_title {
+  		margin-bottom: 30px;
+	}
+
+	/* テキスト */
+	.contact_text {
+  		font-size: 12px;
+	}
+
+	/* メール */
+	.contact_mail {
+  		font-size: 20px;
+	}
+}
+
+/* 768pxここまで */
+
+
+/* 375px以下レスポンシブ対応 */
+
+@media screen and (max-width: 375px) {
+	
+	/* fv */
+	.fv_title {
+    	font-size: 18px;
+		margin-bottom: 10px;
+		line-height: 1.1;
+  	}
+
+  	.fv_sub {
+    	font-size: 12px;
+   		margin-bottom: 15px;
+  	}
+
+  	.fv_btn {
+    	font-size: 12px;
+    	padding: 8px 22px;
+  	}
+	
+	/* about */
+	.about {
+		padding: 60px 20px;
+	}
+	
+	/* テキスト */
+  	.about_text {
+    	font-size: 12px;
+    	line-height: 1.7;
+  	}
+	
+	/* アイコン */
+  	.about_card img {
+    	height: 80px;
+  	}
+
+  	/* タイトル */
+  	.about_card h3 {
+    	font-size: 14px;
+  	}
+
+	
+	/* skill */
+	.skill {
+		padding: 60px 20px;
+	}
+	
+	/* works */
+	.works {
+		padding: 60px 20px;
+	}
+	
+	/* contact */
+	.contact {
+		padding: 60px 20px;
+	}
+
+	/* テキスト */
+	.contact_text {
+		margin-bottom: 15px;
+	}
+
+	/* メール */
+	.contact_mail {
+  		font-size: 18px;
+	}
+}
+
+/* 375pxここまで */

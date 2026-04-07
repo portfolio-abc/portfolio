@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Detail Lumiere | HINATA portfolio site</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/works_detail.css">
+</head>
+
+<body id="top">
+	<header class="header">
+  		<div class="inner header_inner">
+
+    		<h1 class="logo">
+      			<a href="index.html #top">HINATA<br>NAKAMURA</a>
+   			</h1>
+			
+			<!-- ハンバーガー -->
+    		<button class="hamburger" id="hamburger">
+      			<span></span>
+      			<span></span>
+      			<span></span>
+    		</button>
+		
+			<nav class="nav" id="nav">
+      			<ul class="nav_list">
+        			<li><a href="index.html#top">TOP</a></li>
+        			<li><a href="index.html#about">ABOUT</a></li>
+        			<li><a href="index.html#skill">SKILL</a></li>
+        			<li><a href="index.html#works">WORKS</a></li>
+        			<li><a href="index.html#contact">CONTACT</a></li>
+				</ul>
+    		</nav>
+		</div>
+	</header>
+
+	<section class="fv">
+  		<div class="fv_img">
+    		<img src="images/fv_works05.jpg" alt="ワークデスク">
+  		</div>
+	</section>
+	<section class="detail_note">
+		<p>※本作品は紙媒体用に制作しているため、掲載画像は実際の印刷物より画質を落として表示しています。</p>
+	</section>
+	<section class="work_detail">
+  		<div class="inner">
+
+			<h2 class="work_title">
+				テーマ <span>ベーカリーDM（紙媒体想定）</span>
+			</h2>
+
+			<dl class="work_list">
+
+				<div class="work_item">
+					<dt>ターゲット</dt>
+					<dd>
+						地域のパン屋を日常的に利用する主婦層やファミリー層。<br>
+						近隣で気軽に立ち寄れるお店を探している人。<br>
+					</dd>
+				</div>
+
+				<div class="work_item">
+					<dt>課題</dt>
+					<dd>
+						地域のパン屋は競合も多く、来店のきっかけが弱いと継続利用につながりにくい。<br>
+						また、単発の来店で終わってしまい、リピーター獲得が難しいという課題がある。<br>
+					</dd>
+				</div>
+
+				<div class="work_item">
+					<dt>目的</dt>
+					<dd>
+						スタンプキャンペーンを訴求することで、来店のきっかけを作るとともに、「また来たい」と思わせる仕組みを伝え、リピーターの獲得につなげる。<br>
+						さらに、おすすめ商品を掲載することで購買意欲を高めることを目的とした。
+					</dd>
+				</div>
+
+				<div class="work_item">
+					<dt>デザイン</dt>
+					<dd>
+						ベージュやブラウンを基調とした配色で、パン屋らしい温かみと親しみやすさを表現。<br>
+						背景にパンの写真を使用することで雰囲気を伝えつつ、スタンプカードやおすすめ商品などの情報を整理し、見やすく構成した。<br>
+						また、店舗情報に加えて地図などのアクセス情報も掲載することで、来店までのハードルを下げ、実際の来店につながるよう設計している。
+					</dd>
+				</div>
+			</dl>
+		</div>
+	</section>
+	
+	<section class="works_btn">
+		<div class="inner">
+		    <a href="index.html#works" class="btn">作品一覧へ戻る</a>
+		</div>
+	</section>
+
+	<section class="detail_note">
+		<dl>
+			<dt>注記：</dt>
+			<dd>本作品で使用している画像およびイラストは、商用利用可能な素材を使用しています。</dd>
+		</dl>
+	</section>
+	
+	<footer class="footer">
+  		<div class="inner footer_inner">
+			
+    		<h2 class="footer_logo">
+   				Hinata Nakamura
+    		</h2>
+
+    		<nav class="footer_nav">
+      			<ul class="footer_list">
+        			<li><a href="index.html#top">TOP</a></li>
+        			<li><a href="index.html#about">ABOUT</a></li>
+        			<li><a href="index.html#skill">SKILL</a></li>
+        			<li><a href="index.html#works">WORKS</a></li>
+        			<li><a href="index.html#contact">CONTACT</a></li>
+     			</ul>
+    		</nav>
+
+    		<p class="footer_copy">
+      			©2026 hinata nakamura All Rights Reserved.
+    		</p>
+  		</div>
+	</footer>
+	
+	<script>
+		//ハンバーガー
+  		const hamburger = document.getElementById('hamburger');
+  		const nav = document.getElementById('nav');
+
+  		hamburger.addEventListener('click', () => {
+    		hamburger.classList.toggle('active');
+    		nav.classList.toggle('active');
+  		});
+	</script>
+</body>
+</html>
