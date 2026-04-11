@@ -1,5 +1,29 @@
 @charset "utf-8";
 
+/* ローディング画面 */
+#loading {
+	background-color: #eef1f6;
+	position: fixed;
+	inset: 0;
+	z-index: 9999;
+	display: grid;
+	place-items: center;
+}
+
+#loading-screen {
+	background-color: #5a73d8;
+	position: fixed;
+	inset: 0;
+	z-index: 9998;
+	translate: 0 100vh;
+}
+
+#loading p {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #444;
+}
+
 /* fv */
 .fv {
     position: relative;
@@ -32,6 +56,7 @@
 	text-decoration: none;
 	color: #f7f5f2;
 }
+
 /* タイトル */
 .fv_title {
     font-size: clamp(24px, 3vw, 36px);
@@ -282,6 +307,13 @@
 }
 
 /* contactここまで */
+
+
+/* fadein */
+.fadein {
+	opacity: 0;
+}
+/* fadeinここまで */
 
 /* 768px以下レスポンシブ対応 */
 

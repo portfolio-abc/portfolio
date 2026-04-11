@@ -9,6 +9,10 @@
 </head>
 
 <body id="top">
+	<div id="loading">
+		<p>Loading...</p>
+		<div id="loading-screen"></div>
+	</div>
 	<header class="header">
   		<div class="inner header_inner">
 
@@ -67,7 +71,7 @@
     		</div>
 
     		<div class="about_cards">
-      			<div class="about_card">
+      			<div class="about_card fadein">
 					<h3>継続力</h3>
         			<img src="images/logo01_top.png" alt="継続力">
        				 <p>
@@ -76,7 +80,7 @@
         			</p>
       			</div>
 
-      			<div class="about_card">
+      			<div class="about_card fadein">
 					<h3>丁寧さ</h3>
         			<img src="images/logo02_top.png" alt="丁寧さ">
         			<p>
@@ -85,7 +89,7 @@
         			</p>
       			</div>
 
-      			<div class="about_card">
+      			<div class="about_card fadein">
 					<h3>ユーザー視点</h3>
         			<img src="images/logo03_top.png" alt="ユーザー視点">
         			<p>
@@ -103,7 +107,7 @@
     		<h2 class="section_title">SKILL</h2>
     		<div class="skill_list">
       		<!-- Photoshop -->
-      			<div class="skill_card">
+      			<div class="skill_card fadein">
        				<h3 class="skill_title">Photoshop</h3>
         			<p class="skill_text">
           				Photoshopを使用した画像制作やバナー作成を行っています。<br>
@@ -120,7 +124,7 @@
       			</div>
 
       			<!-- HTML / CSS -->
-      			<div class="skill_card">
+      			<div class="skill_card fadein">
         			<h3 class="skill_title">HTML / CSS</h3>
         			<p class="skill_text">
           				HTML・CSSを用いたコーディングを行っています。<br>
@@ -149,19 +153,19 @@
 
     		<div class="works_grid">
 
-      			<a href="detail_brew_link.html" class="works_item">
+      			<a href="detail_brew_link.html" class="works_item fadein">
         			<img src="images/works01_top.jpg" alt="BREW LINK">
         			<p class="works_name">コーヒーショップ　BREW LINK</p>
         			<span class="works_type">Webサイト</span>
      			 </a>
 
-      			<a href="detail_lumiere.html" class="works_item">
+      			<a href="detail_lumiere.html" class="works_item fadein">
         			<img src="images/works02_top.jpg" alt="Lumiere">
         			<p class="works_name">美容院　Lumiere</p>
         			<span class="works_type">Webサイト</span>
       			</a>
 
-      			<a href="detail_stella.html" class="works_item">
+      			<a href="detail_stella.html" class="works_item fadein">
         			<img src="images/works03_top.jpg" alt="STELLA">
         			<p class="works_name">イタリアンレストラン　Ristrante STELLA</p>
         			<span class="works_type">Webサイト</span>
@@ -172,19 +176,19 @@
 
     		<div class="works_grid">
 
- 		   		<a href="detail_banner.html" class="works_item">
+ 		   		<a href="detail_banner.html" class="works_item fadein">
        				<img src="images/works04_top.jpg" alt="バナー">
         			<p class="works_name">焼肉屋キャンペーンバナー</p>
         			<span class="works_type">キャンペーンバナー</span>
       			</a>
 
-      			<a href="detail_dm.html" class="works_item">
+      			<a href="detail_dm.html" class="works_item fadein">
         			<img src="images/works05_top.jpg" alt="DM">
         			<p class="works_name">ベーカリーDM</p>
         			<span class="works_type">DM</span>
       			</a>
 
-      			<a href="detail_logo.html" class="works_item">
+      			<a href="detail_logo.html" class="works_item fadein">
         			<img src="images/works06_top.jpg" alt="ロゴ">
         			<p class="works_name">カフェロゴ　Classic Cafe</p>
         			<span class="works_type">ロゴ</span>
@@ -201,7 +205,7 @@
         			お問い合わせはこちら
 				</p>
         		<a href="mailto:design051423@gmail.com" class="contact_mail">
-  					design051423<wbr>@gmail.com
+  					&#100;&#101;&#115;&#105;&#103;&#110;&#48;&#53;&#49;&#52;&#50;&#51;<wbr>&commat;&#103;&#109;&#97;&#105;&#108;&period;&#99;&#111;&#109;
 				</a>
     		</div>
 		</div>
@@ -230,15 +234,11 @@
   		</div>
 	</footer>
 	
-	<script>
-		//ハンバーガー
-  		const hamburger = document.getElementById('hamburger');
-  		const nav = document.getElementById('nav');
+	<button id="page-top" aria-label="ページトップへ戻る">
+  	↑
+	</button>
 
-  		hamburger.addEventListener('click', () => {
-    		hamburger.classList.toggle('active');
-    		nav.classList.toggle('active');
-  		});
-	</script>
+	<script src="js/script.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

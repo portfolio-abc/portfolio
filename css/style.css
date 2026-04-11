@@ -28,6 +28,14 @@
 	text-decoration: none;
 }
 
+.logo a:hover {
+	opacity: 0.8;
+}
+
+.logo a:visited {
+	color: inherit; 
+}
+
 /* ナビ */
 .nav_list {
   	display: flex;
@@ -160,6 +168,40 @@ body {
 }
 
 /* フッターここまで */
+
+/* TOPへ戻るボタン */
+#page-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #2f4a8a; 
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+/* 表示時 */
+#page-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ホバー */
+#page-top:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+/*TOPへ戻るボタンここまで*/
 
 /* 768px以下レスポンシブ対応 */
 @media screen and (max-width: 768px) {
